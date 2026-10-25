@@ -188,6 +188,33 @@ Minor historical comments, version labels, or development remnants may remain in
 
 A future cleaned or refactored implementation, if provided, should be placed separately from `src/original/` and should not be treated as the exact code used for the reported experiments.
 
+## Analysis and Audit
+
+The `analysis/` directory contains the utilities used to verify run integrity, select canonical downstream runs, and reproduce the final reported aggregates.
+
+### `analysis/resume_v11.py`
+
+Run-completeness and duplicate-check utility used during execution of the downstream experiment.
+
+The script validates available v1.1 manifests and their associated result and response-log checksums, identifies the earliest valid run for each seed--model--case-group combination, reports later duplicate valid runs, and identifies missing or invalid run blocks.
+
+### `analysis/imic_v11_analyze_3seed.py`
+
+Final publication audit and aggregation script.
+
+The analyzer independently discovers and validates the downstream run manifests, verifies model identifiers and digests, Ollama version, generation options, result and response-log hashes, source-code consistency, record counts, prompt hashes, and scoring fields.
+
+For each seed--model--case-group combination, the earliest valid run is selected as canonical and later valid duplicates are excluded from the canonical analysis but recorded in the audit summary.
+
+The script verifies the complete experimental design of four models, three seeds, 14 selected conditions, and four exchange methods, yielding 168 case--model--seed blocks and 672 method-level records.
+
+It produces the final publication artifacts:
+
+- `imic_v11_3seed_merged.csv`
+- `imic_v11_3seed_summary.json`
+
+The summary also records incomplete blocks, originating-constraint results, B3--B4 differences, identical-prompt divergences, canonical manifests, duplicate valid manifests, and invalid or excluded manifests.
+
 ## Reproducibility Scope
 
 The repository is intended to support independent inspection and reproduction of the reported synthetic evaluation.
