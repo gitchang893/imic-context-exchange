@@ -108,13 +108,6 @@ The `benchmark/` directory contains the frozen benchmark inputs, canonical refer
   It contains the synthetic scenario definitions from which the benchmark inputs were derived during development.  
   This file is provided to document the development lineage of the benchmark and should not be confused with `benchmark_inputs_v10.json`, which is the canonical frozen input artifact used by the publication benchmark.
 
-### `benchmark/scenarios/`
-
-At present, this directory contains an identical copy of `imic_v09_scenario_definitions.json`.
-
-The authoritative location for this source-definition artifact is `benchmark/source_definitions/`.  
-The duplicate copy in `benchmark/scenarios/` is retained only during repository reorganization and may be removed from the final publication release to avoid ambiguity.
-
 ### `benchmark/hashes/`
 
 - `v10_checksums.sha256`  
