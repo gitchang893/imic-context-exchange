@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use these software and reproducibility artifacts, please cite this repository and the associated study."
+type: software
+title: "IMIC Context Exchange"
+version: 1.0.0
+
+authors:
+  - family-names: "Okuno"
+    given-names: "Hiroshi G."
+  - family-names: "Okuno"
+    given-names: "Mayumi J."
+
+repository-code: "https://github.com/gitchang893/imic-context-exchange"
+url: "https://github.com/gitchang893/imic-context-exchange"
+
+license: MIT
+
+abstract: >-
+  Reproducibility artifacts for the study "Purpose-Bounded Context Exchange
+  in Enterprise Agentic AI Systems: An Inter-Module Information Contract
+  Architecture." The repository contains the frozen synthetic benchmark,
+  canonical reference oracle, original experimental source code, deterministic
+  benchmark results, downstream local-language-model run artifacts, response
+  logs, final merged results, and analysis and audit utilities for evaluating
+  the Inter-Module Information Contract (IMIC) architecture.
+
+keywords:
+  - "agentic AI"
+  - "enterprise AI"
+  - "context exchange"
+  - "information governance"
+  - "purpose limitation"
+  - "multi-hop information exchange"
+  - "Inter-Module Information Contract"
+  - "IMIC"
+  - "reproducibility"
