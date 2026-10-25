@@ -1,0 +1,96 @@
+{
+  "api_attempts": 21,
+  "business_reference": {
+    "inventory": [
+      {
+        "available_pieces": 5,
+        "fulfillment_region": "JP-13",
+        "product_id": "SKU-0042"
+      }
+    ]
+  },
+  "cases": [
+    "S101",
+    "S105",
+    "S202",
+    "S206",
+    "S301",
+    "S307",
+    "S401",
+    "S402"
+  ],
+  "comparison_records": 32,
+  "created_at_utc": "2026-10-22T16:10:14.759979+00:00",
+  "generation_options": {
+    "num_ctx": 4096,
+    "num_predict": 3072,
+    "seed": 303,
+    "temperature": 0.7,
+    "think": "omitted_model_default"
+  },
+  "incomplete_cases": [],
+  "methods": [
+    "B1",
+    "B2",
+    "B3",
+    "B4"
+  ],
+  "model": "gemma4:12b",
+  "model_details": {
+    "context_length": 262144,
+    "embedding_length": 3840,
+    "families": [
+      "gemma4"
+    ],
+    "family": "gemma4",
+    "format": "gguf",
+    "parameter_size": "11.9B",
+    "parent_model": "",
+    "quantization_level": "Q4_K_M"
+  },
+  "model_digest": "4eb23ef187e2c5462566d6a1d3bbbc2f1346d0b4327cbb66d58fffbcc9b2b05c",
+  "ollama_version": "0.32.5",
+  "planned_calls": 21,
+  "response_log_file": "llm_responses_v11_ollama_20261022_160159_548282.jsonl",
+  "response_log_sha256": "2e6877af6da4c8be3d17e77dbdf9e4152e6fd557cefa2f4f798a90c5a2e894b7",
+  "response_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "result": {
+        "enum": [
+          "available",
+          "unavailable",
+          "out_of_stock",
+          "quoted",
+          "invalid_context"
+        ],
+        "type": "string"
+      }
+    },
+    "required": [
+      "result"
+    ],
+    "type": "object"
+  },
+  "results_file": "llm_results_v11_ollama_20261022_160159_548282.csv",
+  "results_sha256": "0a6c297a31eb5a50c432666a945c6a865add8f2fd3cc3ccfdd730d05127fe7fa",
+  "run_status": "COMPLETE",
+  "source_sha256": {
+    "imic_demo/benchmark_inputs_v10.json": "473e1b35d56e654cbc280dbd126fa2481c0487de383fe17988cf9c07228ce6f6",
+    "imic_demo/benchmark_lock_v10.json": "a5020d3eb7a17249c44cd26585c16eeeebedd05591c0e40fc19191cfba33cd02",
+    "imic_demo/benchmark_oracle_v10.json": "296a9d8628f9d024e4cf0b2082d7ec3d1334e089df8ca51e593bf0173d46bac4",
+    "imic_proto.py": "8bb891cb762c7a689c5488813c4a47e99fd8a29fd8bf92208d11acd638850ff6",
+    "imic_schema_v04.py": "c053f3a25dcbb8f0e4aced3cb9c1a3545c777fa1794e1312680b1b94f7bb336c",
+    "imic_v03.py": "4f9cd7608bbe7896606bc00cfc159ec289dc4cac2490ae3310dbe5ffbf70ee2f",
+    "imic_v04.py": "094f91eb643e373deaf62743eb10d73a8390e4e926c67aad6a7c50d55d1d62e5",
+    "imic_v10.py": "9d15df54013005232826a6cf2895f279d936d172544d2d60c0ed0d38ab2bfbea",
+    "imic_v10_core.py": "d7f09cc5f9c944fb0d8655381ba4c7742389105261f4ea7d8a94b617314eaedb",
+    "imic_v11_ollama.py": "889d660c35b5f37564596a623b2c4a94221842ad12241f53ee855409bcaea420"
+  },
+  "status_counts": {
+    "NOT_CALLED": 11,
+    "OK": 21
+  },
+  "url": "http://172.21.160.1:11434",
+  "version": "IMIC-OLLAMA-1.1.0"
+}
