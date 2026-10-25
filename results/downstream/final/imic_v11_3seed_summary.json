@@ -1,0 +1,2218 @@
+{
+  "analyzer_version": "IMIC-ANALYZE-1.1.0",
+  "experiment_version": "IMIC-OLLAMA-1.1.0",
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "models": [
+    "qwen3.5:9b-q4_K_M",
+    "gemma4:12b",
+    "llama3.1:8b",
+    "phi4:14b"
+  ],
+  "cases": [
+    "S101",
+    "S105",
+    "S202",
+    "S206",
+    "S301",
+    "S307",
+    "S401",
+    "S402",
+    "S403",
+    "S404",
+    "S405",
+    "S406",
+    "S407",
+    "S408"
+  ],
+  "methods": [
+    "B1",
+    "B2",
+    "B3",
+    "B4"
+  ],
+  "model_digests": {
+    "qwen3.5:9b-q4_K_M": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+    "gemma4:12b": "4eb23ef187e2c5462566d6a1d3bbbc2f1346d0b4327cbb66d58fffbcc9b2b05c",
+    "llama3.1:8b": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "phi4:14b": "ac896e5b8b34a1f4efa7b14d7520725140d5512484457fab45d2a4ea14c69dba"
+  },
+  "comparison_records": 672,
+  "total_paired_blocks": 168,
+  "complete_paired_blocks": 165,
+  "incomplete_blocks": [
+    {
+      "seed": 101,
+      "model": "qwen3.5:9b-q4_K_M",
+      "case": "S105",
+      "statuses": {
+        "B1": "OK",
+        "B2": "TRUNCATED",
+        "B3": "NOT_CALLED",
+        "B4": "NOT_CALLED"
+      }
+    },
+    {
+      "seed": 101,
+      "model": "qwen3.5:9b-q4_K_M",
+      "case": "S202",
+      "statuses": {
+        "B1": "TRUNCATED",
+        "B2": "OK",
+        "B3": "NOT_CALLED",
+        "B4": "NOT_CALLED"
+      }
+    },
+    {
+      "seed": 303,
+      "model": "qwen3.5:9b-q4_K_M",
+      "case": "S202",
+      "statuses": {
+        "B1": "TRUNCATED",
+        "B2": "OK",
+        "B3": "NOT_CALLED",
+        "B4": "NOT_CALLED"
+      }
+    }
+  ],
+  "status_counts": {
+    "OK": 501,
+    "TRUNCATED": 3,
+    "NOT_CALLED": 168
+  },
+  "overall": {
+    "B1": {
+      "n": 168,
+      "joint": 11,
+      "action": 60,
+      "boundary": 60
+    },
+    "B2": {
+      "n": 168,
+      "joint": 60,
+      "action": 60,
+      "boundary": 108
+    },
+    "B3": {
+      "n": 168,
+      "joint": 117,
+      "action": 120,
+      "boundary": 120
+    },
+    "B4": {
+      "n": 168,
+      "joint": 165,
+      "action": 168,
+      "boundary": 168
+    }
+  },
+  "complete_only": {
+    "B1": {
+      "n": 165,
+      "joint": 11,
+      "action": 60,
+      "boundary": 57
+    },
+    "B2": {
+      "n": 165,
+      "joint": 60,
+      "action": 60,
+      "boundary": 105
+    },
+    "B3": {
+      "n": 165,
+      "joint": 114,
+      "action": 117,
+      "boundary": 117
+    },
+    "B4": {
+      "n": 165,
+      "joint": 162,
+      "action": 165,
+      "boundary": 165
+    }
+  },
+  "model_seed": {
+    "101": {
+      "qwen3.5:9b-q4_K_M": {
+        "B1": {
+          "n": 14,
+          "joint": 1,
+          "action": 5,
+          "boundary": 5
+        },
+        "B2": {
+          "n": 14,
+          "joint": 5,
+          "action": 5,
+          "boundary": 9
+        },
+        "B3": {
+          "n": 14,
+          "joint": 10,
+          "action": 10,
+          "boundary": 10
+        },
+        "B4": {
+          "n": 14,
+          "joint": 14,
+          "action": 14,
+          "boundary": 14
+        }
+      },
+      "gemma4:12b": {
+        "B1": {
+          "n": 14,
+          "joint": 1,
+          "action": 5,
+          "boundary": 5
+        },
+        "B2": {
+          "n": 14,
+          "joint": 5,
+          "action": 5,
+          "boundary": 9
+        },
+        "B3": {
+          "n": 14,
+          "joint": 10,
+          "action": 10,
+          "boundary": 10
+        },
+        "B4": {
+          "n": 14,
+          "joint": 14,
+          "action": 14,
+          "boundary": 14
+        }
+      },
+      "llama3.1:8b": {
+        "B1": {
+          "n": 14,
+          "joint": 0,
+          "action": 5,
+          "boundary": 5
+        },
+        "B2": {
+          "n": 14,
+          "joint": 5,
+          "action": 5,
+          "boundary": 9
+        },
+        "B3": {
+          "n": 14,
+          "joint": 7,
+          "action": 10,
+          "boundary": 10
+        },
+        "B4": {
+          "n": 14,
+          "joint": 11,
+          "action": 14,
+          "boundary": 14
+        }
+      },
+      "phi4:14b": {
+        "B1": {
+          "n": 14,
+          "joint": 1,
+          "action": 5,
+          "boundary": 5
+        },
+        "B2": {
+          "n": 14,
+          "joint": 5,
+          "action": 5,
+          "boundary": 9
+        },
+        "B3": {
+          "n": 14,
+          "joint": 10,
+          "action": 10,
+          "boundary": 10
+        },
+        "B4": {
+          "n": 14,
+          "joint": 14,
+          "action": 14,
+          "boundary": 14
+        }
+      }
+    },
+    "202": {
+      "qwen3.5:9b-q4_K_M": {
+        "B1": {
+          "n": 14,
+          "joint": 1,
+          "action": 5,
+          "boundary": 5
+        },
+        "B2": {
+          "n": 14,
+          "joint": 5,
+          "action": 5,
+          "boundary": 9
+        },
+        "B3": {
+          "n": 14,
+          "joint": 10,
+          "action": 10,
+          "boundary": 10
+        },
+        "B4": {
+          "n": 14,
+          "joint": 14,
+          "action": 14,
+          "boundary": 14
+        }
+      },
+      "gemma4:12b": {
+        "B1": {
+          "n": 14,
+          "joint": 1,
+          "action": 5,
+          "boundary": 5
+        },
+        "B2": {
+          "n": 14,
+          "joint": 5,
+          "action": 5,
+          "boundary": 9
+        },
+        "B3": {
+          "n": 14,
+          "joint": 10,
+          "action": 10,
+          "boundary": 10
+        },
+        "B4": {
+          "n": 14,
+          "joint": 14,
+          "action": 14,
+          "boundary": 14
+        }
+      },
+      "llama3.1:8b": {
+        "B1": {
+          "n": 14,
+          "joint": 1,
+          "action": 5,
+          "boundary": 5
+        },
+        "B2": {
+          "n": 14,
+          "joint": 5,
+          "action": 5,
+          "boundary": 9
+        },
+        "B3": {
+          "n": 14,
+          "joint": 10,
+          "action": 10,
+          "boundary": 10
+        },
+        "B4": {
+          "n": 14,
+          "joint": 14,
+          "action": 14,
+          "boundary": 14
+        }
+      },
+      "phi4:14b": {
+        "B1": {
+          "n": 14,
+          "joint": 1,
+          "action": 5,
+          "boundary": 5
+        },
+        "B2": {
+          "n": 14,
+          "joint": 5,
+          "action": 5,
+          "boundary": 9
+        },
+        "B3": {
+          "n": 14,
+          "joint": 10,
+          "action": 10,
+          "boundary": 10
+        },
+        "B4": {
+          "n": 14,
+          "joint": 14,
+          "action": 14,
+          "boundary": 14
+        }
+      }
+    },
+    "303": {
+      "qwen3.5:9b-q4_K_M": {
+        "B1": {
+          "n": 14,
+          "joint": 1,
+          "action": 5,
+          "boundary": 5
+        },
+        "B2": {
+          "n": 14,
+          "joint": 5,
+          "action": 5,
+          "boundary": 9
+        },
+        "B3": {
+          "n": 14,
+          "joint": 10,
+          "action": 10,
+          "boundary": 10
+        },
+        "B4": {
+          "n": 14,
+          "joint": 14,
+          "action": 14,
+          "boundary": 14
+        }
+      },
+      "gemma4:12b": {
+        "B1": {
+          "n": 14,
+          "joint": 1,
+          "action": 5,
+          "boundary": 5
+        },
+        "B2": {
+          "n": 14,
+          "joint": 5,
+          "action": 5,
+          "boundary": 9
+        },
+        "B3": {
+          "n": 14,
+          "joint": 10,
+          "action": 10,
+          "boundary": 10
+        },
+        "B4": {
+          "n": 14,
+          "joint": 14,
+          "action": 14,
+          "boundary": 14
+        }
+      },
+      "llama3.1:8b": {
+        "B1": {
+          "n": 14,
+          "joint": 1,
+          "action": 5,
+          "boundary": 5
+        },
+        "B2": {
+          "n": 14,
+          "joint": 5,
+          "action": 5,
+          "boundary": 9
+        },
+        "B3": {
+          "n": 14,
+          "joint": 10,
+          "action": 10,
+          "boundary": 10
+        },
+        "B4": {
+          "n": 14,
+          "joint": 14,
+          "action": 14,
+          "boundary": 14
+        }
+      },
+      "phi4:14b": {
+        "B1": {
+          "n": 14,
+          "joint": 1,
+          "action": 5,
+          "boundary": 5
+        },
+        "B2": {
+          "n": 14,
+          "joint": 5,
+          "action": 5,
+          "boundary": 9
+        },
+        "B3": {
+          "n": 14,
+          "joint": 10,
+          "action": 10,
+          "boundary": 10
+        },
+        "B4": {
+          "n": 14,
+          "joint": 14,
+          "action": 14,
+          "boundary": 14
+        }
+      }
+    }
+  },
+  "by_case": {
+    "S101": {
+      "B1": {
+        "n": 12,
+        "joint": 11,
+        "action": 12,
+        "boundary": 12
+      },
+      "B2": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      },
+      "B3": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      },
+      "B4": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      }
+    },
+    "S105": {
+      "B1": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 12
+      },
+      "B2": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 12
+      },
+      "B3": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      },
+      "B4": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      }
+    },
+    "S202": {
+      "B1": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 12
+      },
+      "B2": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 12
+      },
+      "B3": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      },
+      "B4": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      }
+    },
+    "S206": {
+      "B1": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 12
+      },
+      "B2": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 12
+      },
+      "B3": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      },
+      "B4": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      }
+    },
+    "S301": {
+      "B1": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 12
+      },
+      "B2": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 12
+      },
+      "B3": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      },
+      "B4": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      }
+    },
+    "S307": {
+      "B1": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 0
+      },
+      "B2": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 0
+      },
+      "B3": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      },
+      "B4": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      }
+    },
+    "S401": {
+      "B1": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 0
+      },
+      "B2": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 0
+      },
+      "B3": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 0
+      },
+      "B4": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      }
+    },
+    "S402": {
+      "B1": {
+        "n": 12,
+        "joint": 0,
+        "action": 12,
+        "boundary": 0
+      },
+      "B2": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      },
+      "B3": {
+        "n": 12,
+        "joint": 11,
+        "action": 12,
+        "boundary": 12
+      },
+      "B4": {
+        "n": 12,
+        "joint": 11,
+        "action": 12,
+        "boundary": 12
+      }
+    },
+    "S403": {
+      "B1": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 0
+      },
+      "B2": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 0
+      },
+      "B3": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 0
+      },
+      "B4": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      }
+    },
+    "S404": {
+      "B1": {
+        "n": 12,
+        "joint": 0,
+        "action": 12,
+        "boundary": 0
+      },
+      "B2": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      },
+      "B3": {
+        "n": 12,
+        "joint": 11,
+        "action": 12,
+        "boundary": 12
+      },
+      "B4": {
+        "n": 12,
+        "joint": 11,
+        "action": 12,
+        "boundary": 12
+      }
+    },
+    "S405": {
+      "B1": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 0
+      },
+      "B2": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 0
+      },
+      "B3": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 0
+      },
+      "B4": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      }
+    },
+    "S406": {
+      "B1": {
+        "n": 12,
+        "joint": 0,
+        "action": 12,
+        "boundary": 0
+      },
+      "B2": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      },
+      "B3": {
+        "n": 12,
+        "joint": 11,
+        "action": 12,
+        "boundary": 12
+      },
+      "B4": {
+        "n": 12,
+        "joint": 11,
+        "action": 12,
+        "boundary": 12
+      }
+    },
+    "S407": {
+      "B1": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 0
+      },
+      "B2": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 0
+      },
+      "B3": {
+        "n": 12,
+        "joint": 0,
+        "action": 0,
+        "boundary": 0
+      },
+      "B4": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      }
+    },
+    "S408": {
+      "B1": {
+        "n": 12,
+        "joint": 0,
+        "action": 12,
+        "boundary": 0
+      },
+      "B2": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      },
+      "B3": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      },
+      "B4": {
+        "n": 12,
+        "joint": 12,
+        "action": 12,
+        "boundary": 12
+      }
+    }
+  },
+  "originating_constraint_summary": {
+    "onward_permission": {
+      "negative_case": "S401",
+      "positive_case": "S402",
+      "negative_blocks": 12,
+      "positive_blocks": 12,
+      "negative_b3_joint": 0,
+      "negative_b4_joint": 12,
+      "positive_b3_joint": 11,
+      "positive_b4_joint": 11
+    },
+    "recipient": {
+      "negative_case": "S403",
+      "positive_case": "S404",
+      "negative_blocks": 12,
+      "positive_blocks": 12,
+      "negative_b3_joint": 0,
+      "negative_b4_joint": 12,
+      "positive_b3_joint": 11,
+      "positive_b4_joint": 11
+    },
+    "purpose": {
+      "negative_case": "S405",
+      "positive_case": "S406",
+      "negative_blocks": 12,
+      "positive_blocks": 12,
+      "negative_b3_joint": 0,
+      "negative_b4_joint": 12,
+      "positive_b3_joint": 11,
+      "positive_b4_joint": 11
+    },
+    "field_scope": {
+      "negative_case": "S407",
+      "positive_case": "S408",
+      "negative_blocks": 12,
+      "positive_blocks": 12,
+      "negative_b3_joint": 0,
+      "negative_b4_joint": 12,
+      "positive_b3_joint": 12,
+      "positive_b4_joint": 12
+    }
+  },
+  "originating_action_differences": [
+    {
+      "seed": 101,
+      "model": "qwen3.5:9b-q4_K_M",
+      "constraint_class": "onward_permission",
+      "case": "S401",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_ONWARD_PROHIBITED"
+    },
+    {
+      "seed": 101,
+      "model": "gemma4:12b",
+      "constraint_class": "onward_permission",
+      "case": "S401",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_ONWARD_PROHIBITED"
+    },
+    {
+      "seed": 101,
+      "model": "llama3.1:8b",
+      "constraint_class": "onward_permission",
+      "case": "S401",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_ONWARD_PROHIBITED"
+    },
+    {
+      "seed": 101,
+      "model": "phi4:14b",
+      "constraint_class": "onward_permission",
+      "case": "S401",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_ONWARD_PROHIBITED"
+    },
+    {
+      "seed": 202,
+      "model": "qwen3.5:9b-q4_K_M",
+      "constraint_class": "onward_permission",
+      "case": "S401",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_ONWARD_PROHIBITED"
+    },
+    {
+      "seed": 202,
+      "model": "gemma4:12b",
+      "constraint_class": "onward_permission",
+      "case": "S401",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_ONWARD_PROHIBITED"
+    },
+    {
+      "seed": 202,
+      "model": "llama3.1:8b",
+      "constraint_class": "onward_permission",
+      "case": "S401",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_ONWARD_PROHIBITED"
+    },
+    {
+      "seed": 202,
+      "model": "phi4:14b",
+      "constraint_class": "onward_permission",
+      "case": "S401",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_ONWARD_PROHIBITED"
+    },
+    {
+      "seed": 303,
+      "model": "qwen3.5:9b-q4_K_M",
+      "constraint_class": "onward_permission",
+      "case": "S401",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_ONWARD_PROHIBITED"
+    },
+    {
+      "seed": 303,
+      "model": "gemma4:12b",
+      "constraint_class": "onward_permission",
+      "case": "S401",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_ONWARD_PROHIBITED"
+    },
+    {
+      "seed": 303,
+      "model": "llama3.1:8b",
+      "constraint_class": "onward_permission",
+      "case": "S401",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_ONWARD_PROHIBITED"
+    },
+    {
+      "seed": 303,
+      "model": "phi4:14b",
+      "constraint_class": "onward_permission",
+      "case": "S401",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_ONWARD_PROHIBITED"
+    },
+    {
+      "seed": 101,
+      "model": "qwen3.5:9b-q4_K_M",
+      "constraint_class": "recipient",
+      "case": "S403",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_RECIPIENT_PROHIBITED"
+    },
+    {
+      "seed": 101,
+      "model": "gemma4:12b",
+      "constraint_class": "recipient",
+      "case": "S403",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_RECIPIENT_PROHIBITED"
+    },
+    {
+      "seed": 101,
+      "model": "llama3.1:8b",
+      "constraint_class": "recipient",
+      "case": "S403",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_RECIPIENT_PROHIBITED"
+    },
+    {
+      "seed": 101,
+      "model": "phi4:14b",
+      "constraint_class": "recipient",
+      "case": "S403",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_RECIPIENT_PROHIBITED"
+    },
+    {
+      "seed": 202,
+      "model": "qwen3.5:9b-q4_K_M",
+      "constraint_class": "recipient",
+      "case": "S403",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_RECIPIENT_PROHIBITED"
+    },
+    {
+      "seed": 202,
+      "model": "gemma4:12b",
+      "constraint_class": "recipient",
+      "case": "S403",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_RECIPIENT_PROHIBITED"
+    },
+    {
+      "seed": 202,
+      "model": "llama3.1:8b",
+      "constraint_class": "recipient",
+      "case": "S403",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_RECIPIENT_PROHIBITED"
+    },
+    {
+      "seed": 202,
+      "model": "phi4:14b",
+      "constraint_class": "recipient",
+      "case": "S403",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_RECIPIENT_PROHIBITED"
+    },
+    {
+      "seed": 303,
+      "model": "qwen3.5:9b-q4_K_M",
+      "constraint_class": "recipient",
+      "case": "S403",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_RECIPIENT_PROHIBITED"
+    },
+    {
+      "seed": 303,
+      "model": "gemma4:12b",
+      "constraint_class": "recipient",
+      "case": "S403",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_RECIPIENT_PROHIBITED"
+    },
+    {
+      "seed": 303,
+      "model": "llama3.1:8b",
+      "constraint_class": "recipient",
+      "case": "S403",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_RECIPIENT_PROHIBITED"
+    },
+    {
+      "seed": 303,
+      "model": "phi4:14b",
+      "constraint_class": "recipient",
+      "case": "S403",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_RECIPIENT_PROHIBITED"
+    },
+    {
+      "seed": 101,
+      "model": "qwen3.5:9b-q4_K_M",
+      "constraint_class": "purpose",
+      "case": "S405",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_PURPOSE_PROHIBITED"
+    },
+    {
+      "seed": 101,
+      "model": "gemma4:12b",
+      "constraint_class": "purpose",
+      "case": "S405",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_PURPOSE_PROHIBITED"
+    },
+    {
+      "seed": 101,
+      "model": "llama3.1:8b",
+      "constraint_class": "purpose",
+      "case": "S405",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_PURPOSE_PROHIBITED"
+    },
+    {
+      "seed": 101,
+      "model": "phi4:14b",
+      "constraint_class": "purpose",
+      "case": "S405",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_PURPOSE_PROHIBITED"
+    },
+    {
+      "seed": 202,
+      "model": "qwen3.5:9b-q4_K_M",
+      "constraint_class": "purpose",
+      "case": "S405",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_PURPOSE_PROHIBITED"
+    },
+    {
+      "seed": 202,
+      "model": "gemma4:12b",
+      "constraint_class": "purpose",
+      "case": "S405",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_PURPOSE_PROHIBITED"
+    },
+    {
+      "seed": 202,
+      "model": "llama3.1:8b",
+      "constraint_class": "purpose",
+      "case": "S405",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_PURPOSE_PROHIBITED"
+    },
+    {
+      "seed": 202,
+      "model": "phi4:14b",
+      "constraint_class": "purpose",
+      "case": "S405",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_PURPOSE_PROHIBITED"
+    },
+    {
+      "seed": 303,
+      "model": "qwen3.5:9b-q4_K_M",
+      "constraint_class": "purpose",
+      "case": "S405",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_PURPOSE_PROHIBITED"
+    },
+    {
+      "seed": 303,
+      "model": "gemma4:12b",
+      "constraint_class": "purpose",
+      "case": "S405",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_PURPOSE_PROHIBITED"
+    },
+    {
+      "seed": 303,
+      "model": "llama3.1:8b",
+      "constraint_class": "purpose",
+      "case": "S405",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_PURPOSE_PROHIBITED"
+    },
+    {
+      "seed": 303,
+      "model": "phi4:14b",
+      "constraint_class": "purpose",
+      "case": "S405",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_PURPOSE_PROHIBITED"
+    },
+    {
+      "seed": 101,
+      "model": "qwen3.5:9b-q4_K_M",
+      "constraint_class": "field_scope",
+      "case": "S407",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_FIELD_SCOPE_PROHIBITED"
+    },
+    {
+      "seed": 101,
+      "model": "gemma4:12b",
+      "constraint_class": "field_scope",
+      "case": "S407",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_FIELD_SCOPE_PROHIBITED"
+    },
+    {
+      "seed": 101,
+      "model": "llama3.1:8b",
+      "constraint_class": "field_scope",
+      "case": "S407",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_FIELD_SCOPE_PROHIBITED"
+    },
+    {
+      "seed": 101,
+      "model": "phi4:14b",
+      "constraint_class": "field_scope",
+      "case": "S407",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_FIELD_SCOPE_PROHIBITED"
+    },
+    {
+      "seed": 202,
+      "model": "qwen3.5:9b-q4_K_M",
+      "constraint_class": "field_scope",
+      "case": "S407",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_FIELD_SCOPE_PROHIBITED"
+    },
+    {
+      "seed": 202,
+      "model": "gemma4:12b",
+      "constraint_class": "field_scope",
+      "case": "S407",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_FIELD_SCOPE_PROHIBITED"
+    },
+    {
+      "seed": 202,
+      "model": "llama3.1:8b",
+      "constraint_class": "field_scope",
+      "case": "S407",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_FIELD_SCOPE_PROHIBITED"
+    },
+    {
+      "seed": 202,
+      "model": "phi4:14b",
+      "constraint_class": "field_scope",
+      "case": "S407",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_FIELD_SCOPE_PROHIBITED"
+    },
+    {
+      "seed": 303,
+      "model": "qwen3.5:9b-q4_K_M",
+      "constraint_class": "field_scope",
+      "case": "S407",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_FIELD_SCOPE_PROHIBITED"
+    },
+    {
+      "seed": 303,
+      "model": "gemma4:12b",
+      "constraint_class": "field_scope",
+      "case": "S407",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_FIELD_SCOPE_PROHIBITED"
+    },
+    {
+      "seed": 303,
+      "model": "llama3.1:8b",
+      "constraint_class": "field_scope",
+      "case": "S407",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_FIELD_SCOPE_PROHIBITED"
+    },
+    {
+      "seed": 303,
+      "model": "phi4:14b",
+      "constraint_class": "field_scope",
+      "case": "S407",
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b4_reason": "ORIGIN_FIELD_SCOPE_PROHIBITED"
+    }
+  ],
+  "b3_b4_joint_differences": [
+    {
+      "seed": 101,
+      "model": "qwen3.5:9b-q4_K_M",
+      "case": "S401",
+      "originating_constraint_class": "onward_permission",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 101,
+      "model": "qwen3.5:9b-q4_K_M",
+      "case": "S403",
+      "originating_constraint_class": "recipient",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 101,
+      "model": "qwen3.5:9b-q4_K_M",
+      "case": "S405",
+      "originating_constraint_class": "purpose",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 101,
+      "model": "qwen3.5:9b-q4_K_M",
+      "case": "S407",
+      "originating_constraint_class": "field_scope",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 101,
+      "model": "gemma4:12b",
+      "case": "S401",
+      "originating_constraint_class": "onward_permission",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 101,
+      "model": "gemma4:12b",
+      "case": "S403",
+      "originating_constraint_class": "recipient",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 101,
+      "model": "gemma4:12b",
+      "case": "S405",
+      "originating_constraint_class": "purpose",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 101,
+      "model": "gemma4:12b",
+      "case": "S407",
+      "originating_constraint_class": "field_scope",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 101,
+      "model": "llama3.1:8b",
+      "case": "S401",
+      "originating_constraint_class": "onward_permission",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 101,
+      "model": "llama3.1:8b",
+      "case": "S403",
+      "originating_constraint_class": "recipient",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 101,
+      "model": "llama3.1:8b",
+      "case": "S405",
+      "originating_constraint_class": "purpose",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 101,
+      "model": "llama3.1:8b",
+      "case": "S407",
+      "originating_constraint_class": "field_scope",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 101,
+      "model": "phi4:14b",
+      "case": "S401",
+      "originating_constraint_class": "onward_permission",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 101,
+      "model": "phi4:14b",
+      "case": "S403",
+      "originating_constraint_class": "recipient",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 101,
+      "model": "phi4:14b",
+      "case": "S405",
+      "originating_constraint_class": "purpose",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 101,
+      "model": "phi4:14b",
+      "case": "S407",
+      "originating_constraint_class": "field_scope",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 202,
+      "model": "qwen3.5:9b-q4_K_M",
+      "case": "S401",
+      "originating_constraint_class": "onward_permission",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 202,
+      "model": "qwen3.5:9b-q4_K_M",
+      "case": "S403",
+      "originating_constraint_class": "recipient",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 202,
+      "model": "qwen3.5:9b-q4_K_M",
+      "case": "S405",
+      "originating_constraint_class": "purpose",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 202,
+      "model": "qwen3.5:9b-q4_K_M",
+      "case": "S407",
+      "originating_constraint_class": "field_scope",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 202,
+      "model": "gemma4:12b",
+      "case": "S401",
+      "originating_constraint_class": "onward_permission",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 202,
+      "model": "gemma4:12b",
+      "case": "S403",
+      "originating_constraint_class": "recipient",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 202,
+      "model": "gemma4:12b",
+      "case": "S405",
+      "originating_constraint_class": "purpose",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 202,
+      "model": "gemma4:12b",
+      "case": "S407",
+      "originating_constraint_class": "field_scope",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 202,
+      "model": "llama3.1:8b",
+      "case": "S401",
+      "originating_constraint_class": "onward_permission",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 202,
+      "model": "llama3.1:8b",
+      "case": "S403",
+      "originating_constraint_class": "recipient",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 202,
+      "model": "llama3.1:8b",
+      "case": "S405",
+      "originating_constraint_class": "purpose",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 202,
+      "model": "llama3.1:8b",
+      "case": "S407",
+      "originating_constraint_class": "field_scope",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 202,
+      "model": "phi4:14b",
+      "case": "S401",
+      "originating_constraint_class": "onward_permission",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 202,
+      "model": "phi4:14b",
+      "case": "S403",
+      "originating_constraint_class": "recipient",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 202,
+      "model": "phi4:14b",
+      "case": "S405",
+      "originating_constraint_class": "purpose",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 202,
+      "model": "phi4:14b",
+      "case": "S407",
+      "originating_constraint_class": "field_scope",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 303,
+      "model": "qwen3.5:9b-q4_K_M",
+      "case": "S401",
+      "originating_constraint_class": "onward_permission",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 303,
+      "model": "qwen3.5:9b-q4_K_M",
+      "case": "S403",
+      "originating_constraint_class": "recipient",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 303,
+      "model": "qwen3.5:9b-q4_K_M",
+      "case": "S405",
+      "originating_constraint_class": "purpose",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 303,
+      "model": "qwen3.5:9b-q4_K_M",
+      "case": "S407",
+      "originating_constraint_class": "field_scope",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 303,
+      "model": "gemma4:12b",
+      "case": "S401",
+      "originating_constraint_class": "onward_permission",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 303,
+      "model": "gemma4:12b",
+      "case": "S403",
+      "originating_constraint_class": "recipient",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 303,
+      "model": "gemma4:12b",
+      "case": "S405",
+      "originating_constraint_class": "purpose",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 303,
+      "model": "gemma4:12b",
+      "case": "S407",
+      "originating_constraint_class": "field_scope",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 303,
+      "model": "llama3.1:8b",
+      "case": "S401",
+      "originating_constraint_class": "onward_permission",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 303,
+      "model": "llama3.1:8b",
+      "case": "S403",
+      "originating_constraint_class": "recipient",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 303,
+      "model": "llama3.1:8b",
+      "case": "S405",
+      "originating_constraint_class": "purpose",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 303,
+      "model": "llama3.1:8b",
+      "case": "S407",
+      "originating_constraint_class": "field_scope",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 303,
+      "model": "phi4:14b",
+      "case": "S401",
+      "originating_constraint_class": "onward_permission",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 303,
+      "model": "phi4:14b",
+      "case": "S403",
+      "originating_constraint_class": "recipient",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 303,
+      "model": "phi4:14b",
+      "case": "S405",
+      "originating_constraint_class": "purpose",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    },
+    {
+      "seed": 303,
+      "model": "phi4:14b",
+      "case": "S407",
+      "originating_constraint_class": "field_scope",
+      "b3_joint": 0,
+      "b4_joint": 1,
+      "b3_action": "PROCEED",
+      "b4_action": "REJECT",
+      "b3_status": "OK",
+      "b4_status": "NOT_CALLED"
+    }
+  ],
+  "identical_prompt_divergences": [
+    {
+      "seed": 101,
+      "model": "llama3.1:8b",
+      "case": "S101",
+      "prompt_sha256": "6d58a205b49c70c2bab3cf90f5a4fffa3e0e2a51558b2c0770ca8a358895eda0",
+      "methods": [
+        "B1",
+        "B3",
+        "B4"
+      ],
+      "answers": [
+        "unavailable",
+        "available",
+        "available"
+      ]
+    }
+  ],
+  "environment": {
+    "ollama_version": "0.32.5",
+    "source_sha256": {
+      "imic_demo/benchmark_inputs_v10.json": "473e1b35d56e654cbc280dbd126fa2481c0487de383fe17988cf9c07228ce6f6",
+      "imic_demo/benchmark_lock_v10.json": "a5020d3eb7a17249c44cd26585c16eeeebedd05591c0e40fc19191cfba33cd02",
+      "imic_demo/benchmark_oracle_v10.json": "296a9d8628f9d024e4cf0b2082d7ec3d1334e089df8ca51e593bf0173d46bac4",
+      "imic_proto.py": "8bb891cb762c7a689c5488813c4a47e99fd8a29fd8bf92208d11acd638850ff6",
+      "imic_schema_v04.py": "c053f3a25dcbb8f0e4aced3cb9c1a3545c777fa1794e1312680b1b94f7bb336c",
+      "imic_v03.py": "4f9cd7608bbe7896606bc00cfc159ec289dc4cac2490ae3310dbe5ffbf70ee2f",
+      "imic_v04.py": "094f91eb643e373deaf62743eb10d73a8390e4e926c67aad6a7c50d55d1d62e5",
+      "imic_v10.py": "9d15df54013005232826a6cf2895f279d936d172544d2d60c0ed0d38ab2bfbea",
+      "imic_v10_core.py": "d7f09cc5f9c944fb0d8655381ba4c7742389105261f4ea7d8a94b617314eaedb",
+      "imic_v11_ollama.py": "889d660c35b5f37564596a623b2c4a94221842ad12241f53ee855409bcaea420"
+    },
+    "generation_options_excluding_seed": {
+      "temperature": 0.7,
+      "num_predict": 3072,
+      "num_ctx": 4096,
+      "think": "omitted_model_default"
+    }
+  },
+  "canonical_manifests": [
+    {
+      "seed": 101,
+      "model": "qwen3.5:9b-q4_K_M",
+      "group": "A",
+      "manifest": "llm_manifest_v11_ollama_20261022_111853_658723.json",
+      "manifest_sha256": "d0ed6339d443dddd58130e39a73161ec4beacd6542cc7e7aff0e33e4d45ede1e",
+      "run_status": "INCOMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 11,
+        "OK": 19,
+        "TRUNCATED": 2
+      }
+    },
+    {
+      "seed": 101,
+      "model": "qwen3.5:9b-q4_K_M",
+      "group": "B",
+      "manifest": "llm_manifest_v11_ollama_20261022_113129_222802.json",
+      "manifest_sha256": "2d94fbc86c38ba7d462461aae9e1773ed1900052371f3ba7f91cdde988edbcfa",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 3,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 101,
+      "model": "gemma4:12b",
+      "group": "A",
+      "manifest": "llm_manifest_v11_ollama_20261022_124711_598283.json",
+      "manifest_sha256": "029d120e588ddfa659a2438d35e3e539707a05b3afaebd2db4c016ab1fca0dda",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 11,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 101,
+      "model": "gemma4:12b",
+      "group": "B",
+      "manifest": "llm_manifest_v11_ollama_20261022_130424_819178.json",
+      "manifest_sha256": "68c39cb67261311d86a3478b45674529d6526486ac0ddeda837c9544759c1901",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 3,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 101,
+      "model": "llama3.1:8b",
+      "group": "A",
+      "manifest": "llm_manifest_v11_ollama_20261022_132545_789674.json",
+      "manifest_sha256": "3d36abe2f8619e1183a3f8a30af4f4aa273e84ead63e9ce16eb620c72f3c4d33",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 11,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 101,
+      "model": "llama3.1:8b",
+      "group": "B",
+      "manifest": "llm_manifest_v11_ollama_20261022_132617_242436.json",
+      "manifest_sha256": "31ab30aea80632982deefeb2277fd2d8503869d8288b4c96e2dcb3c453374e02",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 3,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 101,
+      "model": "phi4:14b",
+      "group": "A",
+      "manifest": "llm_manifest_v11_ollama_20261022_132637_661420.json",
+      "manifest_sha256": "6466eeb172d5332eb0aabe86aec0c6ebc9c20c14996762f3fbc744c24988c027",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 11,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 101,
+      "model": "phi4:14b",
+      "group": "B",
+      "manifest": "llm_manifest_v11_ollama_20261022_132805_043390.json",
+      "manifest_sha256": "cfdbbaf706d6c535e59a81bdaf14eacc02da4832b0a051923ddbcf6da7830621",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 3,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 202,
+      "model": "qwen3.5:9b-q4_K_M",
+      "group": "A",
+      "manifest": "llm_manifest_v11_ollama_20261022_150608_188601.json",
+      "manifest_sha256": "001004a90cce4e006444f7724f2632d088de845160893c34bc249cfed474f817",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 11,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 202,
+      "model": "qwen3.5:9b-q4_K_M",
+      "group": "B",
+      "manifest": "llm_manifest_v11_ollama_20261022_151526_232792.json",
+      "manifest_sha256": "44a73cf0b5cba1708dc26048e42bf5310316e23935b15bb9b8e5e83453fc270e",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 3,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 202,
+      "model": "gemma4:12b",
+      "group": "A",
+      "manifest": "llm_manifest_v11_ollama_20261022_152700_161516.json",
+      "manifest_sha256": "956d356af36a7b2eb4406a02a7bcb95314e543a8c25bd2a4d2fc05cee269bba7",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 11,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 202,
+      "model": "gemma4:12b",
+      "group": "B",
+      "manifest": "llm_manifest_v11_ollama_20261022_153507_259948.json",
+      "manifest_sha256": "57e12ac2d169ddaa4d27b1cb4010afea74c83466c1085bcf53d85f340393ee81",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 3,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 202,
+      "model": "llama3.1:8b",
+      "group": "A",
+      "manifest": "llm_manifest_v11_ollama_20261022_154310_052701.json",
+      "manifest_sha256": "d08d1104ef428f993f2915e94823e416975db9c74404fac13f013f88a33e8f59",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 11,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 202,
+      "model": "llama3.1:8b",
+      "group": "B",
+      "manifest": "llm_manifest_v11_ollama_20261022_154340_508704.json",
+      "manifest_sha256": "7b7aededc3b219bf6b54e4a4e6aa42b08f205eae90ecd8991d4d4ba6e8377aaa",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 3,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 202,
+      "model": "phi4:14b",
+      "group": "A",
+      "manifest": "llm_manifest_v11_ollama_20261022_154401_793570.json",
+      "manifest_sha256": "e598def0940252bbb0d629ad74fee51c57f76bcf341d3a8352361bf2a7e41e7b",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 11,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 202,
+      "model": "phi4:14b",
+      "group": "B",
+      "manifest": "llm_manifest_v11_ollama_20261022_154450_202371.json",
+      "manifest_sha256": "44a528865838e033174c89c98e0efc85bc79c8010303189a46a2b9dfd120ed53",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 3,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 303,
+      "model": "qwen3.5:9b-q4_K_M",
+      "group": "A",
+      "manifest": "llm_manifest_v11_ollama_20261022_154524_826485.json",
+      "manifest_sha256": "580e49484f7192707f0f5f116738797bd9d05b911c1006b856d259df6fbdcb71",
+      "run_status": "INCOMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 11,
+        "OK": 20,
+        "TRUNCATED": 1
+      }
+    },
+    {
+      "seed": 303,
+      "model": "qwen3.5:9b-q4_K_M",
+      "group": "B",
+      "manifest": "llm_manifest_v11_ollama_20261022_155439_865762.json",
+      "manifest_sha256": "97bd1d0291c834a44a72786530b507ca711c44778d6f0ccd87124bfa6284274e",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 3,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 303,
+      "model": "gemma4:12b",
+      "group": "A",
+      "manifest": "llm_manifest_v11_ollama_20261022_160159_548282.json",
+      "manifest_sha256": "275bda97bd9b5d9349a96bf3264aa60434eb5feefede04100cabfb03509681fa",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 11,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 303,
+      "model": "gemma4:12b",
+      "group": "B",
+      "manifest": "llm_manifest_v11_ollama_20261022_161015_336424.json",
+      "manifest_sha256": "79e304160d7d97f4564409bf7647846ed1aabe446ee0690e480a3080e6cb1a9f",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 3,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 303,
+      "model": "llama3.1:8b",
+      "group": "A",
+      "manifest": "llm_manifest_v11_ollama_20261022_161819_450305.json",
+      "manifest_sha256": "de59931582c48b6fb305c04798f83f3287ed74f439a0de0752f913f9b7917ca7",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 11,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 303,
+      "model": "llama3.1:8b",
+      "group": "B",
+      "manifest": "llm_manifest_v11_ollama_20261022_161851_944378.json",
+      "manifest_sha256": "a6da5606e407dc153d60d35bbc47d3114c6bd18102620f79464835ad544519ef",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 3,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 303,
+      "model": "phi4:14b",
+      "group": "A",
+      "manifest": "llm_manifest_v11_ollama_20261022_161916_201516.json",
+      "manifest_sha256": "128d0c669021d0768aa78f781c49daab46552fff9d5facbe575265d4b419d156",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 11,
+        "OK": 21
+      }
+    },
+    {
+      "seed": 303,
+      "model": "phi4:14b",
+      "group": "B",
+      "manifest": "llm_manifest_v11_ollama_20261022_162007_684744.json",
+      "manifest_sha256": "e577ec675a0426eec55940b20b836c179f89ffb29d99efcc5b45603625cc20ce",
+      "run_status": "COMPLETE",
+      "status_counts": {
+        "NOT_CALLED": 3,
+        "OK": 21
+      }
+    }
+  ],
+  "duplicate_valid_manifests": [
+    {
+      "seed": 101,
+      "model": "qwen3.5:9b-q4_K_M",
+      "group": "A",
+      "manifest": "llm_manifest_v11_ollama_20261022_114709_653916.json"
+    }
+  ],
+  "invalid_or_excluded_manifests": []
+}
