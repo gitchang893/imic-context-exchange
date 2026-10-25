@@ -46,32 +46,82 @@ The multi-hop conditions include four explicitly represented originating-constra
 
 ## Repository Contents
 
-The repository is organized to separate benchmark definitions, implementation code, experiments, results, and analysis.
+The repository is organized to preserve the original experimental implementation while separating frozen benchmark artifacts, audit utilities, results, and reproduction documentation.
 
 ```text
 imic-context-exchange/
+├── analysis/
+│   ├── imic_v11_analyze_3seed.py
+│   └── resume_v11.py
 ├── benchmark/
-│   ├── scenarios/
+│   ├── hashes/
+│   ├── inputs/
+│   ├── lock/
 │   ├── oracle/
-│   └── hashes/
-├── src/
-│   ├── b1_full_context/
-│   ├── b2_reduced_context/
-│   ├── b3_structured_handoff/
-│   └── b4_imic/
-├── experiments/
-│   ├── deterministic/
-│   └── downstream_llm/
+│   └── source_definitions/
+├── docs/
+│   └── reproduction.md
 ├── results/
 │   ├── deterministic/
-│   ├── downstream_raw/
-│   ├── response_logs/
-│   └── merged/
-├── analysis/
-└── docs/
+│   └── downstream/
+│       ├── excluded/
+│       ├── final/
+│       └── runs/
+│           ├── manifests/
+│           ├── response_logs/
+│           └── results/
+├── src/
+│   └── original/
+├── CITATION.cff
+├── LICENSE
+└── README.md
 ```
 
-Additional files and reproduction instructions will be added as the publication artifacts are finalized.
+The original experimental source files are retained under `src/original/` without publication-driven refactoring.
+
+The benchmark, archived run artifacts, and final analysis products are stored separately so that the provenance chain from frozen inputs to reported results can be independently inspected.
+
+## Reproduction
+
+A Linux-based reference procedure for reproducing the integrity checks and final publication audit is provided in [`docs/reproduction.md`](docs/reproduction.md).
+
+The procedure starts from a fresh repository clone, reconstructs the execution layout expected by the original experimental code, validates the deterministic benchmark, verifies all manifest-linked downstream artifacts, selects the canonical runs, reconstructs the 672-record final dataset, and compares the reconstructed outputs with the archived publication results.
+
+No new language-model generations are required for this audit procedure.
+
+## Software Environment
+
+The downstream language-model experiment used local models executed through Ollama.
+
+The evaluated configuration includes:
+
+- Python 3.10 or later
+- Ollama version 0.32.5
+- temperature: 0.7
+- prediction-token limit: 3072
+- context window: 4096
+- timeout: 180 seconds
+- generation seeds: 101, 202, and 303
+
+The prototype implementation requires the Python `jsonschema` package.
+
+Exact model identifiers, model digests, run manifests, generation settings, source hashes, and execution records are included with the archived experimental artifacts.
+
+The final publication audit uses the archived run artifacts and does not require a running Ollama server.
+
+## Data and Code Availability
+
+The synthetic benchmark inputs, canonical reference oracle, benchmark lock metadata, original experimental source code, deterministic benchmark results, downstream experiment records, response logs, run manifests, final merged dataset, and analysis scripts supporting the findings of the study are openly available in this repository.
+
+A versioned archival release and persistent DOI will be provided for the publication version.
+
+## Citation
+
+Citation metadata for this repository is provided in [`CITATION.cff`](CITATION.cff).
+
+GitHub users may also use the **Cite this repository** function displayed on the repository page.
+
+A persistent DOI will be added after the publication release is archived.
 
 ## Benchmark Artifacts
 
