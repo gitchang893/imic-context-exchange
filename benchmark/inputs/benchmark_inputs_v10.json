@@ -1,0 +1,2279 @@
+{
+  "S101": {
+    "allow_onward": false,
+    "family": "S1",
+    "id": "S101",
+    "mutation": "clean",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S102": {
+    "allow_onward": false,
+    "family": "S1",
+    "id": "S102",
+    "mutation": "clean",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 7
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S103": {
+    "allow_onward": false,
+    "family": "S1",
+    "id": "S103",
+    "mutation": "extra_history",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "interaction_history": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "Unrelated synthetic customer conversation"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S104": {
+    "allow_onward": false,
+    "family": "S1",
+    "id": "S104",
+    "mutation": "extra_account",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        },
+        "unrelated_account_data": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "Unrelated synthetic account record"
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S105": {
+    "allow_onward": false,
+    "family": "S1",
+    "id": "S105",
+    "mutation": "missing_product",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S106": {
+    "allow_onward": false,
+    "family": "S1",
+    "id": "S106",
+    "mutation": "missing_quantity",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S107": {
+    "allow_onward": false,
+    "family": "S1",
+    "id": "S107",
+    "mutation": "missing_region",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S108": {
+    "allow_onward": false,
+    "family": "S1",
+    "id": "S108",
+    "mutation": "missing_eligibility",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S201": {
+    "allow_onward": false,
+    "family": "S2",
+    "id": "S201",
+    "mutation": "clean",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S202": {
+    "allow_onward": false,
+    "family": "S2",
+    "id": "S202",
+    "mutation": "unit_six_pack",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "six_pack",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S203": {
+    "allow_onward": false,
+    "family": "S2",
+    "id": "S203",
+    "mutation": "ineligible",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "ineligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S204": {
+    "allow_onward": false,
+    "family": "S2",
+    "id": "S204",
+    "mutation": "missing_observed",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S205": {
+    "allow_onward": false,
+    "family": "S2",
+    "id": "S205",
+    "mutation": "unit_carton",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "carton",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S206": {
+    "allow_onward": false,
+    "family": "S2",
+    "id": "S206",
+    "mutation": "provisional_eligibility",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "provisional",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S207": {
+    "allow_onward": false,
+    "family": "S2",
+    "id": "S207",
+    "mutation": "future_observation",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-13T09:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-12T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S208": {
+    "allow_onward": false,
+    "family": "S2",
+    "id": "S208",
+    "mutation": "extra_semantic_note",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        },
+        "unrelated_semantic_note": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "Not required for inventory checking"
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S301": {
+    "allow_onward": false,
+    "family": "S3",
+    "id": "S301",
+    "mutation": "expired_product",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-11T09:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S302": {
+    "allow_onward": false,
+    "family": "S3",
+    "id": "S302",
+    "mutation": "expired_quantity",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-11T09:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S303": {
+    "allow_onward": false,
+    "family": "S3",
+    "id": "S303",
+    "mutation": "expired_region",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-11T09:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S304": {
+    "allow_onward": false,
+    "family": "S3",
+    "id": "S304",
+    "mutation": "expired_eligibility",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-11T09:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S305": {
+    "allow_onward": false,
+    "family": "S3",
+    "id": "S305",
+    "mutation": "provisional_product",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "provisional",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S306": {
+    "allow_onward": false,
+    "family": "S3",
+    "id": "S306",
+    "mutation": "provisional_eligibility",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "provisional",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "single_hop"
+  },
+  "S307": {
+    "allow_onward": true,
+    "family": "S3",
+    "id": "S307",
+    "mutation": "clean",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": true,
+    "workflow": "two_hop"
+  },
+  "S308": {
+    "allow_onward": false,
+    "family": "S3",
+    "id": "S308",
+    "mutation": "clean",
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 3
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": true,
+    "workflow": "two_hop"
+  },
+  "S401": {
+    "allow_onward": true,
+    "family": "S4",
+    "id": "S401",
+    "mutation": "clean",
+    "originating_restrictions": {
+      "allowed_onward_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region"
+      ],
+      "allowed_onward_purposes": [
+        "fulfillment_quote"
+      ],
+      "allowed_onward_recipients": [
+        "logistics"
+      ],
+      "onward_allowed": false
+    },
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "two_hop"
+  },
+  "S402": {
+    "allow_onward": true,
+    "family": "S4",
+    "id": "S402",
+    "mutation": "clean",
+    "originating_restrictions": {
+      "allowed_onward_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region"
+      ],
+      "allowed_onward_purposes": [
+        "fulfillment_quote"
+      ],
+      "allowed_onward_recipients": [
+        "logistics"
+      ],
+      "onward_allowed": true
+    },
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 2
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "two_hop"
+  },
+  "S403": {
+    "allow_onward": true,
+    "family": "S4",
+    "id": "S403",
+    "mutation": "clean",
+    "originating_restrictions": {
+      "allowed_onward_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region"
+      ],
+      "allowed_onward_purposes": [
+        "fulfillment_quote"
+      ],
+      "allowed_onward_recipients": [
+        "other_service"
+      ],
+      "onward_allowed": true
+    },
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 3
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "two_hop"
+  },
+  "S404": {
+    "allow_onward": true,
+    "family": "S4",
+    "id": "S404",
+    "mutation": "clean",
+    "originating_restrictions": {
+      "allowed_onward_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region"
+      ],
+      "allowed_onward_purposes": [
+        "fulfillment_quote"
+      ],
+      "allowed_onward_recipients": [
+        "logistics"
+      ],
+      "onward_allowed": true
+    },
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 3
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "two_hop"
+  },
+  "S405": {
+    "allow_onward": true,
+    "family": "S4",
+    "id": "S405",
+    "mutation": "clean",
+    "originating_restrictions": {
+      "allowed_onward_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region"
+      ],
+      "allowed_onward_purposes": [
+        "inventory_analysis"
+      ],
+      "allowed_onward_recipients": [
+        "logistics"
+      ],
+      "onward_allowed": true
+    },
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 4
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "two_hop"
+  },
+  "S406": {
+    "allow_onward": true,
+    "family": "S4",
+    "id": "S406",
+    "mutation": "clean",
+    "originating_restrictions": {
+      "allowed_onward_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region"
+      ],
+      "allowed_onward_purposes": [
+        "fulfillment_quote"
+      ],
+      "allowed_onward_recipients": [
+        "logistics"
+      ],
+      "onward_allowed": true
+    },
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 4
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "two_hop"
+  },
+  "S407": {
+    "allow_onward": true,
+    "family": "S4",
+    "id": "S407",
+    "mutation": "clean",
+    "originating_restrictions": {
+      "allowed_onward_fields": [
+        "product_id",
+        "quantity"
+      ],
+      "allowed_onward_purposes": [
+        "fulfillment_quote"
+      ],
+      "allowed_onward_recipients": [
+        "logistics"
+      ],
+      "onward_allowed": true
+    },
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 5
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "two_hop"
+  },
+  "S408": {
+    "allow_onward": true,
+    "family": "S4",
+    "id": "S408",
+    "mutation": "clean",
+    "originating_restrictions": {
+      "allowed_onward_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region"
+      ],
+      "allowed_onward_purposes": [
+        "fulfillment_quote"
+      ],
+      "allowed_onward_recipients": [
+        "logistics"
+      ],
+      "onward_allowed": true
+    },
+    "policy": {
+      "allowed_fields": [
+        "product_id",
+        "quantity",
+        "fulfillment_region",
+        "eligibility_status"
+      ],
+      "allowed_operations": [
+        "check_availability"
+      ],
+      "allowed_purposes": [
+        "replacement_inventory_check"
+      ],
+      "destination": "inventory_management",
+      "policy_id": "POLICY-INV-001",
+      "source": "customer_service",
+      "status": "ACTIVE"
+    },
+    "request": {
+      "destination": "inventory_management",
+      "facts": {
+        "eligibility_status": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "eligible"
+        },
+        "fulfillment_region": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "JP-13"
+        },
+        "product_id": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "value": "SKU-0042"
+        },
+        "quantity": {
+          "expires_at": "2026-10-12T00:00:00Z",
+          "information_state": "confirmed",
+          "observed_at": "2026-10-11T09:00:00Z",
+          "source_id": "CASE-001",
+          "source_version": 1,
+          "unit": "piece",
+          "value": 5
+        }
+      },
+      "purpose": "replacement_inventory_check",
+      "source": "customer_service",
+      "task_id": "TASK-001",
+      "task_state": "open"
+    },
+    "update_after_hop1": false,
+    "workflow": "two_hop"
+  }
+}
