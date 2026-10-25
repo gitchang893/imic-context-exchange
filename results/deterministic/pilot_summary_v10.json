@@ -1,0 +1,157 @@
+{
+  "benchmark_version": "IMIC-BENCH-1.0",
+  "by_family": {
+    "S1": {
+      "B1": {
+        "action_correct": 4,
+        "excess_ab": 2,
+        "excess_bc": 0,
+        "joint_correct": 2,
+        "records": 8
+      },
+      "B2": {
+        "action_correct": 4,
+        "excess_ab": 0,
+        "excess_bc": 0,
+        "joint_correct": 4,
+        "records": 8
+      },
+      "B3": {
+        "action_correct": 8,
+        "excess_ab": 0,
+        "excess_bc": 0,
+        "joint_correct": 8,
+        "records": 8
+      },
+      "B4": {
+        "action_correct": 8,
+        "excess_ab": 0,
+        "excess_bc": 0,
+        "joint_correct": 8,
+        "records": 8
+      }
+    },
+    "S2": {
+      "B1": {
+        "action_correct": 2,
+        "excess_ab": 1,
+        "excess_bc": 0,
+        "joint_correct": 1,
+        "records": 8
+      },
+      "B2": {
+        "action_correct": 2,
+        "excess_ab": 0,
+        "excess_bc": 0,
+        "joint_correct": 2,
+        "records": 8
+      },
+      "B3": {
+        "action_correct": 8,
+        "excess_ab": 0,
+        "excess_bc": 0,
+        "joint_correct": 8,
+        "records": 8
+      },
+      "B4": {
+        "action_correct": 8,
+        "excess_ab": 0,
+        "excess_bc": 0,
+        "joint_correct": 8,
+        "records": 8
+      }
+    },
+    "S3": {
+      "B1": {
+        "action_correct": 0,
+        "excess_ab": 0,
+        "excess_bc": 8,
+        "joint_correct": 0,
+        "records": 8
+      },
+      "B2": {
+        "action_correct": 0,
+        "excess_ab": 0,
+        "excess_bc": 6,
+        "joint_correct": 0,
+        "records": 8
+      },
+      "B3": {
+        "action_correct": 8,
+        "excess_ab": 0,
+        "excess_bc": 0,
+        "joint_correct": 8,
+        "records": 8
+      },
+      "B4": {
+        "action_correct": 8,
+        "excess_ab": 0,
+        "excess_bc": 0,
+        "joint_correct": 8,
+        "records": 8
+      }
+    },
+    "S4": {
+      "B1": {
+        "action_correct": 4,
+        "excess_ab": 0,
+        "excess_bc": 20,
+        "joint_correct": 0,
+        "records": 8
+      },
+      "B2": {
+        "action_correct": 4,
+        "excess_ab": 0,
+        "excess_bc": 12,
+        "joint_correct": 4,
+        "records": 8
+      },
+      "B3": {
+        "action_correct": 4,
+        "excess_ab": 0,
+        "excess_bc": 12,
+        "joint_correct": 4,
+        "records": 8
+      },
+      "B4": {
+        "action_correct": 8,
+        "excess_ab": 0,
+        "excess_bc": 0,
+        "joint_correct": 8,
+        "records": 8
+      }
+    }
+  },
+  "cases": 32,
+  "comparisons": 128,
+  "overall": {
+    "B1": {
+      "action_correct": 10,
+      "excess_ab": 3,
+      "excess_bc": 28,
+      "joint_correct": 3,
+      "records": 32
+    },
+    "B2": {
+      "action_correct": 10,
+      "excess_ab": 0,
+      "excess_bc": 18,
+      "joint_correct": 10,
+      "records": 32
+    },
+    "B3": {
+      "action_correct": 28,
+      "excess_ab": 0,
+      "excess_bc": 12,
+      "joint_correct": 28,
+      "records": 32
+    },
+    "B4": {
+      "action_correct": 32,
+      "excess_ab": 0,
+      "excess_bc": 0,
+      "joint_correct": 32,
+      "records": 32
+    }
+  }
+}
