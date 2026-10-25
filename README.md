@@ -73,6 +73,42 @@ imic-context-exchange/
 
 Additional files and reproduction instructions will be added as the publication artifacts are finalized.
 
+## Benchmark Artifacts
+
+The `benchmark/` directory contains the frozen scenario definitions, canonical reference oracle, and checksum records used to support reproducibility of the deterministic benchmark and downstream integration experiments.
+
+### `benchmark/scenarios/`
+
+- `imic_v09_scenario_definitions.json`  
+  Frozen synthetic scenario definitions used by the evaluation code.  
+  The file contains the benchmark inputs for the S1--S4 scenario families, including request data, policy conditions, workflow type, onward-transfer settings, and scenario-specific mutations.
+
+### `benchmark/oracle/`
+
+- `benchmark_oracle_v10.json`  
+  Canonical reference oracle used for publication-level evaluation.  
+  For each scenario, the oracle specifies the acceptable exchange action, permitted A-to-B and B-to-C field sets, and expected normalized business result.  
+  The v10 oracle also records the `originating_constraint_class` for the S4 multi-hop conditions, covering:
+  - `onward_permission`
+  - `recipient`
+  - `purpose`
+  - `field_scope`
+
+The publication benchmark uses `imic_v09_scenario_definitions.json` as the frozen scenario input artifact and `benchmark_oracle_v10.json` as the canonical reference oracle.  
+The v10 oracle preserves the reference actions, permitted field sets, and expected outcomes used in the benchmark while adding explicit metadata for the four originating-constraint classes evaluated in the S4 family.
+
+### `benchmark/hashes/`
+
+- `v10_checksums.sha256`  
+  SHA-256 checksums for the frozen benchmark artifacts.  
+  The checksum file can be verified on Linux with:
+
+```bash
+sha256sum -c benchmark/hashes/v10_checksums.sha256
+```
+
+These checksum records are provided so that the exact benchmark artifacts used for reproducibility can be verified independently.
+
 ## Reproducibility Scope
 
 The repository is intended to support independent inspection and reproduction of the reported synthetic evaluation.
