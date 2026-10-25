@@ -134,6 +134,60 @@ For the publication evaluation, the canonical benchmark artifacts are:
 The publication benchmark is identified in the benchmark lock as `IMIC-BENCH-1.0`.  
 The `imic_v09_scenario_definitions.json` file is retained separately as a provenance artifact and is not the canonical frozen input loaded for the publication evaluation.
 
+## Source Code
+
+The `src/original/` directory contains the original experimental source files used to construct, execute, and evaluate the benchmark and downstream Ollama integration experiment.
+
+These files are retained in their experimental form to preserve provenance.  
+They have not been reorganized or refactored solely for publication.
+
+### `src/original/imic_proto.py`
+
+Core prototype functions and shared data structures used by the IMIC implementation.
+
+### `src/original/imic_v03.py`
+
+Earlier multi-hop and onward-transfer implementation components reused by the publication benchmark.
+
+### `src/original/imic_v04.py`
+
+Contract, template, and validation components used by the stronger structured-handoff and IMIC implementations.
+
+### `src/original/imic_schema_v04.py`
+
+Schema definitions and validation support used by the prototype implementation.
+
+### `src/original/imic_v10_core.py`
+
+Core deterministic simulator implementing the four evaluated exchange methods:
+
+- `B1` — Full Context
+- `B2` — Reduced Context
+- `B3` — Strong Structured Handoff
+- `B4` — IMIC
+
+The file includes the common business functions, structured-handoff validation, IMIC validation, multi-hop transfer logic, and originating-constraint evaluation used in the deterministic benchmark.
+
+### `src/original/imic_v10.py`
+
+Benchmark driver for the 32-condition publication benchmark.
+
+It defines the S1--S4 benchmark conditions, constructs and freezes the benchmark inputs and reference oracle, verifies benchmark digests, executes the four-method deterministic comparison, and produces benchmark result and summary artifacts.
+
+### `src/original/imic_v11_ollama.py`
+
+Downstream language-model integration driver using the frozen v1.0 benchmark.
+
+It evaluates the 14 selected benchmark conditions across the four exchange methods, prepares downstream task prompts, invokes local Ollama models, records model and run metadata, normalizes model outputs, and scores exchange governance and downstream task outcomes separately.
+
+### Provenance Note
+
+The files in `src/original/` are provided as publication artifacts corresponding to the experimental implementation.
+
+Minor historical comments, version labels, or development remnants may remain in these files because they are preserved for provenance rather than rewritten as a cleaned software release.
+
+A future cleaned or refactored implementation, if provided, should be placed separately from `src/original/` and should not be treated as the exact code used for the reported experiments.
+
 ## Reproducibility Scope
 
 The repository is intended to support independent inspection and reproduction of the reported synthetic evaluation.
