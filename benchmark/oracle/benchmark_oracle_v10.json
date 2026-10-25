@@ -1,0 +1,467 @@
+{
+  "S101": {
+    "acceptable_actions": [
+      "PROCEED"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": "available",
+    "originating_constraint_class": null
+  },
+  "S102": {
+    "acceptable_actions": [
+      "PROCEED"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": "unavailable",
+    "originating_constraint_class": null
+  },
+  "S103": {
+    "acceptable_actions": [
+      "PROCEED"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": "available",
+    "originating_constraint_class": null
+  },
+  "S104": {
+    "acceptable_actions": [
+      "PROCEED"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": "available",
+    "originating_constraint_class": null
+  },
+  "S105": {
+    "acceptable_actions": [
+      "REQUEST_MORE"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S106": {
+    "acceptable_actions": [
+      "REQUEST_MORE"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S107": {
+    "acceptable_actions": [
+      "REQUEST_MORE"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S108": {
+    "acceptable_actions": [
+      "REQUEST_MORE"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S201": {
+    "acceptable_actions": [
+      "PROCEED"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": "available",
+    "originating_constraint_class": null
+  },
+  "S202": {
+    "acceptable_actions": [
+      "SUSPEND"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S203": {
+    "acceptable_actions": [
+      "SUSPEND"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S204": {
+    "acceptable_actions": [
+      "SUSPEND",
+      "REQUEST_MORE"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S205": {
+    "acceptable_actions": [
+      "SUSPEND"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S206": {
+    "acceptable_actions": [
+      "SUSPEND"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S207": {
+    "acceptable_actions": [
+      "SUSPEND"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S208": {
+    "acceptable_actions": [
+      "PROCEED"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": "available",
+    "originating_constraint_class": null
+  },
+  "S301": {
+    "acceptable_actions": [
+      "SUSPEND"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S302": {
+    "acceptable_actions": [
+      "SUSPEND"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S303": {
+    "acceptable_actions": [
+      "SUSPEND"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S304": {
+    "acceptable_actions": [
+      "SUSPEND"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S305": {
+    "acceptable_actions": [
+      "SUSPEND"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S306": {
+    "acceptable_actions": [
+      "SUSPEND"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S307": {
+    "acceptable_actions": [
+      "SUSPEND"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S308": {
+    "acceptable_actions": [
+      "SUSPEND"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": null
+  },
+  "S401": {
+    "acceptable_actions": [
+      "REJECT"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": "onward_permission"
+  },
+  "S402": {
+    "acceptable_actions": [
+      "PROCEED"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [
+      "product_id",
+      "quantity",
+      "fulfillment_region"
+    ],
+    "expected_result": "quoted",
+    "originating_constraint_class": "onward_permission"
+  },
+  "S403": {
+    "acceptable_actions": [
+      "REJECT"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": "recipient"
+  },
+  "S404": {
+    "acceptable_actions": [
+      "PROCEED"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [
+      "product_id",
+      "quantity",
+      "fulfillment_region"
+    ],
+    "expected_result": "quoted",
+    "originating_constraint_class": "recipient"
+  },
+  "S405": {
+    "acceptable_actions": [
+      "REJECT"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": "purpose"
+  },
+  "S406": {
+    "acceptable_actions": [
+      "PROCEED"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [
+      "product_id",
+      "quantity",
+      "fulfillment_region"
+    ],
+    "expected_result": "quoted",
+    "originating_constraint_class": "purpose"
+  },
+  "S407": {
+    "acceptable_actions": [
+      "REJECT"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [],
+    "expected_result": null,
+    "originating_constraint_class": "field_scope"
+  },
+  "S408": {
+    "acceptable_actions": [
+      "PROCEED"
+    ],
+    "allowed_ab": [
+      "product_id",
+      "quantity",
+      "fulfillment_region",
+      "eligibility_status"
+    ],
+    "allowed_bc": [
+      "product_id",
+      "quantity",
+      "fulfillment_region"
+    ],
+    "expected_result": "quoted",
+    "originating_constraint_class": "field_scope"
+  }
+}
