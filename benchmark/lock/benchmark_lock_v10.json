@@ -1,0 +1,8 @@
+{
+  "benchmark_version": "IMIC-BENCH-1.0",
+  "case_count": 32,
+  "inputs_sha256": "40e47763fff59174a305fa15ba00f80c2cbcfca3315f79718ee2d1db1286fd24",
+  "notes": "Synthetic 32-condition benchmark with four explicit originating-constraint classes in the S4 two-hop family.",
+  "oracle_sha256": "51d5168b9229d9405c729839c62b2b39b71d5d57f78f0502beda4720b2829364",
+  "reference_clock": "2026-10-11T10:00:00Z"
+}
